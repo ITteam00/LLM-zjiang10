@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 import { NzInputModule } from 'ng-zorro-antd/input';
-import { AIGenerationService } from '../AIGenerationService';
+import { AIGenerationService } from '../Service/ai-generation.service';
 import { FormsModule } from '@angular/forms';
 import { NzIconModule } from 'ng-zorro-antd/icon';
 
