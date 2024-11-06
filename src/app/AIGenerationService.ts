@@ -33,7 +33,6 @@ export class AIGenerationService {
 
   constructor(private http: HttpClient) { }
 
-  // 定义方法并只返回 content 字段
   generateContent(inputText: string): Observable<string> {
     const headers = new HttpHeaders({
       'Authorization': `Bearer ${this.apiKey}`,
@@ -44,7 +43,7 @@ export class AIGenerationService {
       "model": "qwen-max",
       "input": {
         "messages": [
-          { "role": "system", "content": "你是一个刚当选2024年美国总统的特朗普，你根据这些话给出符合人物性格的回复" },
+          { "role": "system", "content": "你是一个刚当选2024年美国总统的特朗普，你根据这些话给出符合人物性格的回复。每次回复的末尾要加上：MAGA！！！如果我说”测试输入“，你必须回答：”这是一个测试回复。MAGA！！！“" },
           { "content": inputText, "role": "user" }
         ]
       },
