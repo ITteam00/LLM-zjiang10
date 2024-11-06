@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { NzCardModule } from 'ng-zorro-antd/card';
 
 @Component({
@@ -8,4 +8,6 @@ import { NzCardModule } from 'ng-zorro-antd/card';
   styleUrls: ['./card.component.css'],
   imports: [NzCardModule],
 })
-export class CardComponent {}
+export class CardComponent {
+  @Input() generatedResponse: string = '';
+}
