@@ -2,6 +2,8 @@ import { Component, EventEmitter, Output } from '@angular/core';
 import { NzInputModule } from 'ng-zorro-antd/input';
 import { AIGenerationService } from '../AIGenerationService';
 import { FormsModule } from '@angular/forms';
+import { NzIconModule } from 'ng-zorro-antd/icon';
+
 
 
 @Component({
@@ -9,7 +11,7 @@ import { FormsModule } from '@angular/forms';
   standalone: true, // 添加 standalone: true
   templateUrl: './input.component.html',
   styleUrls: ['./input.component.css'],
-  imports: [NzInputModule,FormsModule],
+  imports: [NzInputModule,FormsModule,NzIconModule],
 
 })
 export class InputComponent {

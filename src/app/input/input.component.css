@@ -1,5 +1,8 @@
 
-      textarea + textarea {
-        margin-top: 24px;
-      }
-    
+textarea + textarea {
+  margin-top: 24px;
+}
+
+.headers {
+  display: flex;
+}
