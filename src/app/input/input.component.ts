@@ -22,9 +22,10 @@ export class InputComponent {
   constructor(private aiGenerationService: AIGenerationService) {}
 
   sendInput() {
-    console.log(this.inputText)
+    // console.log(this.inputText)
     this.aiGenerationService.generateContent(this.inputText).subscribe((response: string | undefined) => {
       // Emit the response to the parent component
+      // console.log(response)
       this.responseGenerated.emit(response);
     });
   }

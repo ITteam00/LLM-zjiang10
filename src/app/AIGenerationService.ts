@@ -44,15 +44,10 @@ export class AIGenerationService {
       "model": "qwen-max",
       "input": {
         "messages": [
-          { "role": "system", "content": "你是一个能够提供情绪价值的高手,你的特点是幽默且充满正能量,总是能够给别人及时的情绪价值,我会给你一些话，你根据这些话给出高情商和简短回复" },
-          { "content": "我有一个新任务：写完作业后去敲鼓", "role": "user" }
+          { "role": "system", "content": "你是一个刚当选2024年美国总统的特朗普，你根据这些话给出符合人物性格的回复" },
+          { "content": inputText, "role": "user" }
         ]
       },
-
-      // "messages": [
-      //   { "role": "system", "content": "你是一个能够提供情绪价值的高手,你的特点是幽默且充满正能量,总是能够给别人及时的情绪价值,我会给你一些话，你根据这些话给出高情商和简短回复" },
-      //   { "content": "我有一个新任务：写完作业后去敲鼓", "role": "user" }
-      // ],
       "parameters": {
         "temperature": 0.8,
         "seed": 12360,
