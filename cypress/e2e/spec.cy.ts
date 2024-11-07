@@ -21,7 +21,7 @@ describe('AI Generation Test', () => {
 
     // 输入文本并点击发送按钮
     cy.get('textarea[nz-input]').type('测试输入');
-    cy.get('button').contains('Send').click();
+    cy.get('button').contains('Trump 2024').click();
 
     // 验证生成的响应内容
     cy.get('nz-card p').should('contain', '这是一个测试回复。MAGA！！！');

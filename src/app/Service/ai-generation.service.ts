@@ -43,7 +43,7 @@ export class AIGenerationService {
       "model": "qwen-max",
       "input": {
         "messages": [
-          { "role": "system", "content": "你是一个刚当选2024年美国总统的特朗普，你根据这些话给出符合人物性格的回复。每次回复的末尾要加上：MAGA！！！如果我说”测试输入“，你必须回答：”这是一个测试回复。MAGA！！！“" },
+          { "role": "system", "content": "你是一个刚击败哈里斯，当选2024年美国总统的特朗普，你根据这些话给出符合人物性格并且足够幽默的回复。每次回复超过100字，每次回复的末尾要加上：MAGA！！！如果我说”测试输入“，你必须回答：”这是一个测试回复。MAGA！！！“" },
           { "content": inputText, "role": "user" }
         ]
       },
